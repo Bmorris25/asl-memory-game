@@ -1,0 +1,25 @@
+[
+    { "id": 1, "name": "eat", "image": "/images/eat-w.png", "audio": "/audio/apple.mp3", "type": "word" },
+    { "id": 2, "name": "eat", "image": "/images/eat.png", "type": "sign" },
+    { "id": 3, "name": "again", "image": "/images/again-w.png", "audio": "/audio/banana.mp3", "type": "word" },
+    { "id": 4, "name": "again", "image": "/images/again.png", "type": "sign" },
+    { "id": 5, "name": "all-done", "image": "/images/all-done-w.png", "audio": "/audio/banana.mp3", "type": "word" },
+    { "id": 6, "name": "all-done", "image": "/images/all-done.png", "type": "sign" },
+    { "id": 7, "name": "apple", "image": "/images/apple-w.png", "audio": "/audio/banana.mp3", "type": "word" },
+    { "id": 8, "name": "apple", "image": "/images/apple.png", "type": "sign" },
+    { "id": 9, "name": "aunt", "image": "/images/aunt-w.png", "audio": "/audio/banana.mp3", "type": "word" },
+    { "id": 10, "name": "aunt", "image": "/images/aunt.png", "type": "sign" },
+    { "id": 11, "name": "backpack", "image": "/images/backpack-w.png", "audio": "/audio/banana.mp3", "type": "word" },
+    { "id": 12, "name": "backpack", "image": "/images/backpack.png", "type": "sign" },
+    { "id": 13, "name": "ball", "image": "/images/ball-w.png", "audio": "/audio/banana.mp3", "type": "word" },
+    { "id": 14, "name": "ball", "image": "/images/ball.png", "type": "sign" },
+    { "id": 15, "name": "balloon", "image": "/images/balloon-w.png", "audio": "/audio/banana.mp3", "type": "word" },
+    { "id": 16, "name": "balloon", "image": "/images/balloon.png", "type": "sign" },
+    { "id": 17, "name": "banana", "image": "/images/banana-w.png", "audio": "/audio/banana.mp3", "type": "word" },
+    { "id": 18, "name": "banana", "image": "/images/banana.png", "type": "sign" },
+    { "id": 19, "name": "band-aid", "image": "/images/band-aid-w.png", "audio": "/audio/banana.mp3", "type": "word" },
+    { "id": 20, "name": "band-aid", "image": "/images/band-aid.png", "type": "sign" },
+    { "id": 21, "name": "barber", "image": "/images/barber-w.png", "audio": "/audio/banana.mp3", "type": "word" },
+    { "id": 22, "name": "barber", "image": "/images/barber.png", "type": "sign" }
+  ]
+  
