@@ -1,6 +1,13 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 const Card = ({ card, handleClick, isFlipped }) => {
+  useEffect(() => {
+    if (isFlipped && card.type === "word" && card.audio) {
+      // Create an audio object and play it
+      const audio = new Audio(card.audio);
+      audio.play();
+    }
+  }, [isFlipped, card]);
   return (
     <div className={`card ${isFlipped ? "flipped" : ""}`} onClick={() => handleClick(card)}>
       <div className={`card-inner ${isFlipped ? "flipped" : ""}`}>

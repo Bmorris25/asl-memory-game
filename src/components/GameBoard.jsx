@@ -51,7 +51,7 @@ const GameBoard = () => {
 
   return (
     <div>
-      <button className="m-3" onClick={loadNewGame}>New Game</button>
+      <button className="m-3 btn btn-outline-danger" onClick={loadNewGame}>New Game</button>
       <div className="game-board memory-game-grid">
         {cards.map((card) => (
           <Card

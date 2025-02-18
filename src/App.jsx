@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <div>
-        <h1>ASL Memory Game</h1>
+        <h1 className='fw-bold'>ASL Memory Game</h1>
       </div>
       <Router>
       <Routes>
