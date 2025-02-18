@@ -6,10 +6,14 @@
 }
 
 .card {
-  width: 150px;
-  height: 150px;
-  perspective: 1000px; /* Enables 3D effect */
+  width: 22vw; /* Adjust width based on viewport */
+  height: 22vw; /* Keep height proportional */
+  max-width: 120px; /* Prevents being too large on bigger screens */
+  max-height: 120px;
+  perspective: 1000px;
 }
+
+
 
 .card-inner {
   width: 100%;
@@ -48,20 +52,34 @@
 
 .card img {
   width: 90%; /* Ensures image takes most of the space */
-  height: 90%; /* Keeps the aspect ratio */
+  height: auto; /* Keeps the aspect ratio */
   object-fit: cover;
   border-radius: 5px;
 }
 
 .memory-game-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns */
-  grid-template-rows: repeat(4, 1fr); /* 4 rows */
-  gap: 20px; /* Space between cards */
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Adjust columns based on space */
+  gap: 10px;
   justify-content: center;
   align-items: center;
-  width: fit-content; /* Prevents stretching */
-  margin: auto; /* Centers the grid */
+  width: 90%; /* Ensure it doesn't overflow */
+  margin: auto;
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 768px) {
+  .memory-game-grid {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns on desktop */
+    gap: 20px; /* Add larger gap on desktop */
+  }
+
+  .card {
+    width: 15vw; /* 25% of the viewport width on desktop */
+    height: 15vw; /* Maintain proportionality */
+    max-width: 150px; /* Preventing it from being too large */
+    max-height: 150px;
+  }
 }
 
 .celebration-container {
@@ -88,4 +106,7 @@
 @keyframes pop-in {
   from { transform: scale(0.5); opacity: 0; }
   to { transform: scale(1); opacity: 1; }
+}
+h1 {
+  font-size: clamp(1.5rem, 5vw, 2.5rem); /* Adjusts based on screen */
 }
